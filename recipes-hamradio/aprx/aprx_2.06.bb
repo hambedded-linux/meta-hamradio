@@ -11,9 +11,7 @@ operate fully and is therefore useful mainly for licensed radio \
 amateurs."
 
 HOMEPAGE = "http://wiki.ham.fi/Aprx.en"
-# FIXME: what's the license? It is as-is. I put GPL-2.0 to be able to
-# compile.
-LICENSE = "GPL-2.0"
+LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=0b06e70bf9d783402903f4120ec96dc6"
 
 # DEPENDS: This package only depends on libc. While the package is being
