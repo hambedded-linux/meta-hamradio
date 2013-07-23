@@ -9,6 +9,7 @@ LICENSE = "GPL-2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=94d55d512a9ba36caa9b7df079bae19f"
 
 DEPENDS = "libax25"
+RRECOMMENDS_${PN} = "kernel-module-ax25 kernel-module-mkiss"
 
 MINOR_VERSION = "rc4"
 PR = "r0"
