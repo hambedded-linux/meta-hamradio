@@ -1,0 +1,34 @@
+# Axports  is  an  ASCII file that contains information about each of the
+# physical AX.25 ports that are to be used. When dealing  with  an  AX.25
+# utility  such  as  call, it takes an optional argument that is the port
+# name. This port name is a reference to the line within  axports,  which
+# has  that  name  as  its  first  argument. The information on each line
+# contains enough  information  to  bind  the  command  to  a  particular
+# physical AX.25 interface, this binding is done by matching the callsign
+# on the line in axports with the callsign of the port set by kissattach.
+#
+# name callsign speed paclen window description
+#
+# The field descriptions are:
+#
+#  name          is  the unique identifier of the port. This is the
+#                name given as the port argument  of  many  of  the
+#                AX.25 support programs.
+#
+#  callsign      the callsign of the physical interface to bind to.
+#
+#  speed         this is the speed of interface, a  value  of  zero
+#                means  that no speed will be set by kissattach(8).
+#
+#  paclen        is  the  default  maximum  packet  size  for  this
+#                interface.
+#
+#  window        the default window size for this interface.
+#
+#  description   a  free format description of this interface, this
+#                field extends to the end of the line.  This  field
+#                may contain space
+#
+# An example configuration would be:
+#
+# radio     TA1AET-1    9600    256     2   9600bps 144.800 MHz
